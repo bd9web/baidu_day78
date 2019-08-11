@@ -1,0 +1,78 @@
+<!--实现一个三栏布局，左侧固定宽度，右侧固定宽度，中间部分宽度随浏览器宽度变化而自适应变化-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+/*            float+calc*/
+/*
+            .left{
+                background-color: aquamarine; 
+                width:100px;
+                float: left;
+            } 
+            .right{
+                background-color: antiquewhite;
+                float: right;
+                width:100px;
+            }
+            .center{
+                background-color: darkcyan;
+                width:calc(100% - 200px);
+                float:left;
+            }
+*/
+/*            position+calc*/
+/*
+           .left{
+                background-color: aquamarine; 
+                width:100px;
+                position: absolute;
+                left:0;
+            } 
+            .right{
+                background-color: antiquewhite;
+                position: absolute;
+                right:0;
+                width:100px;
+            }
+            .center{
+                background-color: darkcyan;
+                width:calc(100% - 200px);
+                position: absolute;
+                left:100px;
+            } 
+*/
+            .wrapper{
+                display: flex;
+            }
+            .left{
+                background-color: aquamarine; 
+                width:100px;
+            } 
+            .right{
+                background-color: antiquewhite;
+                width:100px;
+            }
+            .center{
+                background-color: darkcyan;
+                width:calc(100% - 200px);
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="left">
+                <p>左</p>
+            </div>
+            <div class="center">
+                <p>中间</p>
+            </div>
+            <div class="right">
+                <p>右</p>
+            </div>  
+            
+        </div>
+    </body>
+</html>

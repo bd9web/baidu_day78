@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .header{
+                width:100%;
+                height: 50px;
+                background-color:darkslategray;
+            }
+            .header-center{
+                width:960px;
+                height:100%;
+                /*定宽块状元素居中*/
+                margin:0 auto;
+                position:relative;
+            }
+            .header-center-link{
+                position:absolute;
+                right:0;
+                top:0;
+                text-decoration: underline;
+            }
+            .banner{
+                width:100%;
+                height:300px;
+                background-color: darkseagreen;
+            }
+            .banner-center{
+                width:960px;
+                height:100%;
+                /*定宽块状元素居中*/
+                margin:0 auto;
+                position:relative;
+            }
+            .banner-center-block{
+                position: absolute;
+                width:100%;
+                bottom: 0;
+                right:0;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            .banner-center-block1,
+            .banner-center-block3,
+            .banner-center-block4{
+                width:20px;
+                height:22px;
+                background-color: azure;
+                border: 1px solid black;
+                text-align: center;
+                margin:5px;
+            }
+            .banner-center-block2{
+                width:20px;
+                height:30px;
+                background-color:aliceblue;
+                border: 1px solid black;
+                text-align: center;
+                margin:5px;
+            }
+            .nav{
+                border-bottom: 1px solid gray;
+                width: 100%;
+                height:50px;
+            }
+            .nav-center{
+                width:960px;
+                height:100%;
+                /*定宽块状元素居中*/
+                margin:0 auto;
+                position:relative;
+                
+            }
+            .nav-center-block{
+                position: absolute;
+                bottom: 0;
+                left:0;
+                height:80%;
+                width:100%;
+            }
+            .nav-center-block1{
+                float: left;
+                width:80px;
+                height: 100%;
+                text-align: center;
+                border: 1px solid grey;
+                border-bottom: 0;
+                border-radius: 10px 10px 0 0;
+                background-color: white;
+            }
+            .nav-center-block2,
+            .nav-center-block3{
+                float: left;
+                width:80px;
+                height: 100%;
+                text-align: center;
+                border: 1px solid grey;
+                border-radius: 10px 10px 0 0;
+                background-color:azure;
+            }
+            .main-content{
+                width:960px;
+                height:600px;
+                /*定宽块状元素居中*/
+                margin:0 auto;
+                position:relative;
+            }
+            .main-content-line1,.main-content-line2,.main-content-line3{
+                display: flex;
+                width:100%;
+                height:200px;
+            }
+            .content1,.content2,.content3,.content8,.content9,.content10{
+                min-width: 80px;
+                min-height: 80px;
+                width:33.3%;
+                border:1px solid grey;
+                margin:5px;
+                text-align: center;
+                display: table-cell;
+                vertical-align:middle;
+            }
+            .content4,.content5,
+            .content6,.content7{
+                min-width: 80px;
+                min-height: 80px;
+                width:25%;
+                border:1px solid grey;
+                margin:5px;
+                text-align: center;
+            }
+            .footer{
+                width:100%;
+                height: 100px;
+                background-color:dimgrey;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+                <div class="header">
+                    <div class="header-center">
+                        <font color="white">Logo</font>
+                        <div class="header-center-link">
+                            <font color="white">Github</font>&nbsp;
+                            <font color="white">Register</font>&nbsp;
+                            <font color="white">Login</font>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="banner-center">
+                        <div class="banner-center-block">
+                            <div class="banner-center-block4">
+                                <font>4</font>
+                            </div>
+                            <div class="banner-center-block3">
+                                <font>3</font>
+                            </div>
+                            <div class="banner-center-block2">
+                                <font>2</font>
+                            </div>
+                            <div class="banner-center-block1">
+                                <font>1</font>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-center">
+                        <div class="nav-center-block">
+                            <div class="nav-center-block1">HOME
+                            </div>
+                            <div class="nav-center-block2">PROFILE
+                            </div>
+                            <div class="nav-center-block3">ABOUT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="main-content-line1">
+                        <div class="content1">content1
+                        </div>
+                        <div class="content2">content2
+                        </div>
+                        <div class="content3">content3
+                        </div>
+                    </div>
+                    <div class="main-content-line2">
+                        <div class="content4">content4
+                        </div>
+                        <div class="content5">content5
+                        </div>
+                        <div class="content6">content6
+                        </div>
+                        <div class="content7">content7
+                        </div>
+                    </div>
+                    <div class="main-content-line3">
+                        <div class="content8">content8
+                        </div>
+                        <div class="content9">content9
+                        </div>
+                        <div class="content10">content10
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <font color="white">2018 ife.baidu.com</font>
+            </div>
+        </div>
+        
+    </body>
+</html>
